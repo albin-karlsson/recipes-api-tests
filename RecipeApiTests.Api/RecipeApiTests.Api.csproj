@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RecipeApiTests.Domain\RecipeApiTests.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

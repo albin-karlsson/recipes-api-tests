@@ -1,6 +1,6 @@
 ﻿namespace RecipeApiTests.Api
 {
-    public class Class1
+    public class ApiCaller
     {
 
     }

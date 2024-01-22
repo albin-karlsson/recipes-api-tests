@@ -1,3 +1,4 @@
+using FluentAssertions;
 using RecipeApiTests.Api;
 
 namespace RecipeApiTests.Tests
@@ -5,21 +6,17 @@ namespace RecipeApiTests.Tests
     public class ApiCallerTests
     {
         [Fact]
-        public async Task GetRecipes_ReturnsListOfRecipesAsync()
+        public async Task GetRecipeTitlesAsync_ReturnsListOfRecipeTitlesAsync()
         {
             // Given
             ApiCaller apiCaller = new();
-            HttpClient client = new();
-            string url = "https://dummyjson.com/recipes";
 
             // When
-
-            HttpResponseMessage response = await client.GetAsync("https://dummyjson.com/recipes");
-            string json = await response.Content.ReadAsStringAsync();
-
-
-            //string json = await client.GetStringAsync(url);
+            List<string> recipeTitles = await apiCaller.GetRecipeTitlesAsync();
 
             // Then
+            recipeTitles.Should().NotBeNull();
+            recipeTitles.Count().Should().BeGreaterThan(0);
         }
     }
+}

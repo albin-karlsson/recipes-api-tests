@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeApiTests.Tests", "Rec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeApiTests.Api", "RecipeApiTests.Api\RecipeApiTests.Api.csproj", "{F55D1424-AF4B-4859-BB89-19189E1E7348}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecipeApiTests.Domain", "RecipeApiTests.Domain\RecipeApiTests.Domain.csproj", "{B1AB22EC-1E62-43D9-B896-D9C09D14C3F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F55D1424-AF4B-4859-BB89-19189E1E7348}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F55D1424-AF4B-4859-BB89-19189E1E7348}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F55D1424-AF4B-4859-BB89-19189E1E7348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1AB22EC-1E62-43D9-B896-D9C09D14C3F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1AB22EC-1E62-43D9-B896-D9C09D14C3F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1AB22EC-1E62-43D9-B896-D9C09D14C3F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1AB22EC-1E62-43D9-B896-D9C09D14C3F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -17,6 +17,7 @@ namespace RecipeApiTests.Tests
             // Then
             recipeTitles.Should().NotBeNull();
             recipeTitles.Count().Should().BeGreaterThan(0);
+            recipeTitles.Should().BeOfType<List<string>>();
         }
     }
 }

@@ -1,20 +1,15 @@
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using RecipeApiTests.Api;
 
 namespace RecipeApiTests.UI.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
+        public List<string>? RecipeTitles { get; set; }
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public async Task OnGet()
         {
-            _logger = logger;
-        }
-
-        public void OnGet()
-        {
-
+            RecipeTitles = await new ApiCaller().GetRecipeTitlesAsync();
         }
     }
 }
